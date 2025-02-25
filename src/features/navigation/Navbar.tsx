@@ -1,5 +1,4 @@
 import Link from "next/link";
-import React from "react";
 import CatalogueMenuContainer from "./CatalogueMenuContainer";
 import {
   BadgePercent,
