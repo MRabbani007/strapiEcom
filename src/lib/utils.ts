@@ -48,7 +48,10 @@ export function flattenAttributes(data: any): any {
 }
 
 export function getStrapiURL() {
-  return process.env.STRAPI_URL; // "http://localhost:1337";
+  return (
+    process.env?.NEXT_PUBLIC_STRAPI_URL ??
+    "https://honest-surprise-ee6d3b6dd4.strapiapp.com"
+  ); // "http://localhost:1337";
 }
 
 export function getStrapiMedia(url: string | null) {
