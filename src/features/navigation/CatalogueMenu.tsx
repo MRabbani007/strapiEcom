@@ -2,7 +2,7 @@
 
 import { Button } from "@/components/ui/button";
 import { getStrapiMedia } from "@/lib/utils";
-import { ChevronRight, LayoutGrid, Menu, X } from "lucide-react";
+import { ChevronRight, LayoutGrid, X } from "lucide-react";
 import Link from "next/link";
 import React, { useEffect, useRef, useState } from "react";
 
