@@ -1,7 +1,7 @@
 import qs from "qs";
 import { getAuthToken } from "../services/get-token";
 
-import { flattenAttributes, getStrapiURL } from "@/lib/utils";
+import { getStrapiURL } from "@/lib/utils";
 
 const baseUrl = getStrapiURL();
 
@@ -15,8 +15,6 @@ async function fetchData(url: string) {
       Authorization: `Bearer ${authToken}`,
     },
   };
-
-  console.log(url);
 
   try {
     const response = await fetch(url, authToken ? headers : {});
