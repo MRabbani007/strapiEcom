@@ -5,6 +5,7 @@ export function cn(...inputs: ClassValue[]) {
   return twMerge(clsx(inputs));
 }
 
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
 export function flattenAttributes(data: any): any {
   // Check if data is a plain object; return as is if not
   if (
@@ -22,10 +23,11 @@ export function flattenAttributes(data: any): any {
   }
 
   // Initialize an object with an index signature for the flattened structure
-  let flattened: { [key: string]: any } = {};
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  const flattened: { [key: string]: any } = {};
 
   // Iterate over each key in the object
-  for (let key in data) {
+  for (const key in data) {
     // Skip inherited properties from the prototype chain
     if (!data.hasOwnProperty(key)) continue;
 
