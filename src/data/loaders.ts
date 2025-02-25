@@ -16,6 +16,8 @@ async function fetchData(url: string) {
     },
   };
 
+  console.log(url);
+
   try {
     const response = await fetch(url, authToken ? headers : {});
 
