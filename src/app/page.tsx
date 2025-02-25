@@ -1,5 +1,4 @@
 import CardSearchParams from "@/features/store/CardSearchParams";
-import { X } from "lucide-react";
 
 // type Props = {
 //   searchParams: {
